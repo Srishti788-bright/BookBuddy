@@ -15,6 +15,8 @@ import Reviews from "./pages/Reviews";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
+const API_BASE = "https://bookbuddy-backend-stou.onrender.com";
+
 function App() {
   const [book, setBook] = useState("");
   const [books, setBooks] = useState([]);
@@ -28,7 +30,7 @@ function App() {
   // Fetch books from backend
   function fetchBooks() {
     axios
-      .get("http://localhost:5000/books")
+      .get(`${API_BASE}/books`)
       .then((response) => {
         setBooks(response.data);
       })
@@ -45,7 +47,7 @@ function App() {
     }
 
     axios
-      .post("http://localhost:5000/books", {
+      .post(`${API_BASE}/books`, {
         title: book,
         author: "Unknown",
         status: "Not Started",
@@ -62,7 +64,7 @@ function App() {
   // Delete book
   function deleteBook(id) {
     axios
-      .delete(`http://localhost:5000/books/${id}`)
+      .delete(`${API_BASE}/books/${id}`)
       .then(() => {
         fetchBooks();
       })

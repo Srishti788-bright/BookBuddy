@@ -1,0 +1,10 @@
+{
+  "name": "bookbuddy-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install-backend": "npm install --prefix backend",
+    "start-backend": "npm start --prefix backend",
+    "build": "npm install --prefix backend"
+  }
+}
