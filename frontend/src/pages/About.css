@@ -1,0 +1,150 @@
+.about-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    line-height: 1.6;
+}
+
+.about-hero {
+    text-align: center;
+    margin-bottom: 50px;
+    background: linear-gradient(135deg, #f0f4ff, #fdf2f4);
+    padding: 45px 30px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.about-hero h1 {
+    font-size: 36px !important;
+    color: var(--secondaryColor) !important;
+    font-weight: 800 !important;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.about-hero p {
+    color: #475569;
+    font-size: 18px !important;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Stats Section */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.stat-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+}
+
+.stat-number {
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    color: var(--primaryColor) !important;
+    margin-bottom: 6px;
+}
+
+.stat-label {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Mission Section */
+.about-section {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.about-section h2 {
+    font-size: 24px !important;
+    color: var(--secondaryColor) !important;
+    margin-bottom: 15px;
+    font-weight: 700 !important;
+    border-left: 4px solid var(--secondaryColor);
+    padding-left: 12px;
+    margin-top: 0 !important;
+}
+
+.about-section p {
+    color: #475569;
+    font-size: 16px !important;
+    margin-bottom: 20px;
+}
+
+/* Core Values Cards */
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.value-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+}
+
+.value-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--secondaryColor) !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+.value-card p {
+    margin: 0;
+    font-size: 14px !important;
+    color: #64748b;
+}
+
+/* Quote banner */
+.about-quote-banner {
+    background: var(--secondaryColor);
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 20px rgba(10, 36, 114, 0.15);
+}
+
+.about-quote-banner p {
+    font-size: 18px !important;
+    font-style: italic;
+    font-weight: 500 !important;
+    margin-bottom: 10px;
+    color: #ffffff !important;
+}
+
+.about-quote-banner span {
+    font-size: 14px !important;
+    color: #93c5fd;
+    font-weight: 600 !important;
+}

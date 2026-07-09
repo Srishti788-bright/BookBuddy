@@ -1,0 +1,144 @@
+/* ===== HOME PAGE ===== */
+
+.home {
+  min-height: 100vh;
+  background: var(--bg-light) !important;
+  color: #333333 !important;
+  padding-bottom: 50px;
+}
+
+/* ===== HERO SECTION ===== */
+
+.hero {
+  text-align: center;
+  padding: 30px 20px 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 52px !important;
+  font-weight: 800 !important;
+  color: var(--secondaryColor) !important;
+  margin-bottom: 15px !important;
+  letter-spacing: -0.5px;
+}
+
+.hero h2 {
+  font-size: 24px !important;
+  color: var(--primaryColor) !important;
+  font-weight: 600 !important;
+  margin-bottom: 35px !important;
+}
+
+.quote {
+  font-size: 22px !important;
+  font-style: italic;
+  line-height: 1.6;
+  color: #475569 !important;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.author {
+  margin-top: 15px;
+  color: #64748b;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.hero-btn {
+  margin-top: 30px;
+}
+
+/* ===== FEATURES SECTION ===== */
+
+.features {
+  padding: 60px 20px;
+  max-width: 950px;
+  margin: auto;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 32px !important;
+  color: var(--secondaryColor) !important;
+  margin-bottom: 40px !important;
+  font-weight: 800 !important;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(10, 36, 114, 0.05);
+}
+
+.card h3 {
+  font-size: 20px !important;
+  color: var(--secondaryColor) !important;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700 !important;
+}
+
+.card p {
+  color: #64748b !important;
+  font-size: 15px !important;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== DAILY QUOTE SECTION ===== */
+
+.daily-quote {
+  background: linear-gradient(135deg, #f0f4ff, #fdf2f4);
+  border: 1px solid var(--border-color);
+  padding: 40px 20px;
+  border-radius: 24px;
+  max-width: 800px;
+  margin: 40px auto 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+}
+
+.daily-quote h2 {
+  font-size: 24px !important;
+  color: var(--secondaryColor) !important;
+  margin-bottom: 15px !important;
+  font-weight: 700 !important;
+}
+
+.daily-quote p {
+  font-size: 18px !important;
+  font-style: italic;
+  color: #475569 !important;
+  max-width: 600px;
+  margin: 0 auto 12px;
+}
+
+.daily-quote span {
+  font-size: 14px !important;
+  color: var(--primaryColor);
+  font-weight: 600 !important;
+}
